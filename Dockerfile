@@ -18,5 +18,5 @@ ENV AIRFLOW__WEBSERVER__AUTH_BACKEND=airflow.contrib.auth.backends.password_auth
 EXPOSE 5000
 #COPY main.py .
 #ENV FLASK_APP=main.py
-#CMD ["airflow", "webserver", "--port=5000"]
-CMD ["airflow", "db", "init"]
+CMD ["airflow", "webserver", "--port=5000"]
+#CMD ["airflow", "db", "init"]
