@@ -3,7 +3,9 @@
 ### Plan  
 1) Try implement heroku project in docker and in the clould https://medium.com/@damesavram/running-airflow-on-heroku-ed1d28f8013d
 2) Procfile is similar to bash cli command one wants to run
-3) Connect to postgress
-
+3) Connect to postgress https://towardsdatascience.com/local-development-set-up-of-postgresql-with-docker-c022632f13ea
+```
+psql postgresql://<username>:<databasepassword>@postgres:5432/<database>
+```
 
 We are trying to build a simple docker image for airflow project 
