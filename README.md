@@ -9,3 +9,7 @@ psql postgresql://<username>:<databasepassword>@postgres:5432/<database>
 ```
 
 We are trying to build a simple docker image for airflow project 
+
+
+1) Done
+	- what is `airflow db init`? This will create all the necessary tables in the database that Airflow will use to store its metadata.
