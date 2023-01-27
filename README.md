@@ -12,6 +12,11 @@ psql postgresql://<username>:<databasepassword>@postgres:5432/<database>
 
 
 ### Done
--[x] what is `airflow db init`? This will create all the necessary tables in the database that Airflow will use to store its metadata.
--[x] then launch `airflow webserver --port=5000` and `docker run -p 5000:5000 airflow-docker-name`, then it will be available on the localhost
--[ ] continue with this tutorial
+  -[x] what is `airflow db init`? This will create all the necessary tables in the database that Airflow will use to store its metadata.
+  -[x] then launch `airflow webserver --port=5000` and `docker run -p 5000:5000 airflow-docker-name`, then it will be available on the localhost
+  -[ ] deploy to the cloud 
+
+
+### HOW TO RUN
+1) launch postgres
+2) launch airflow
