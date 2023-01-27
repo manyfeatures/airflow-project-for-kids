@@ -3,6 +3,7 @@ FROM python:3.8-buster
 WORKDIR /app
 COPY startup.sh .
 COPY requirements.txt requirements.txt
+COPY dags/ /app/dags/
 RUN pip install -r requirements.txt
 
 # postgress db address for metadata and something else?
