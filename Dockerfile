@@ -1,6 +1,7 @@
 FROM python:3.8-buster 
 
 WORKDIR /app
+COPY startup.sh .
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
@@ -18,7 +19,5 @@ ENV AIRFLOW__WEBSERVER__AUTH_BACKEND=airflow.contrib.auth.backends.password_auth
 
 # Maybe it is redundant
 EXPOSE 5000
-#COPY main.py .
-#ENV FLASK_APP=main.py
-CMD ["airflow", "webserver", "--port=5000"]
-#CMD ["airflow", "db", "init"]
+
+CMD ["/bin/bash", "startup.sh"]
